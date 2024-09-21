@@ -2,8 +2,7 @@ import { GlobalStyle } from "../styles/global";
 import { MateriaisConteudo } from '../styles/Materiais.styles'
 import { useState } from 'react';
 import Header from '../components/Header'
-import Lua from "/IconLua.png"
-import Sol from "/IconSol.png"
+import Botao from "../components/Botao";
 
 export default function Materiais() {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,12 +10,9 @@ export default function Materiais() {
     setDarkMode(!darkMode)
   }
   return (
-    <MateriaisConteudo>
+    <MateriaisConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
-      <button id="botao" onClick={toggleDarkMode}>
-        <img className={darkMode ? 'oculto' : ''} src={Lua} alt="Sol ícone" />
-        <img className={darkMode ? '' : 'oculto'} src={Sol} alt="Lua ícone" />
-      </button>
+      <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       <GlobalStyle/>
     </MateriaisConteudo>
   )

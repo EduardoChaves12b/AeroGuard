@@ -45,3 +45,23 @@ export const Head = styled.header`
         }
     }
 `
+
+export const Modo = styled.button`
+    all: unset;
+    position: absolute;
+    right: 1.5rem;
+
+    .oculto{
+        display: none;
+    }
+
+    img{
+        width: 7.125rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    
+    :hover{
+        cursor: pointer;
+    }
+`

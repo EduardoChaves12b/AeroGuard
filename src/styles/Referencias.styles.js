@@ -6,19 +6,4 @@ export const ReferenciasConteudo = styled.main`
     .oculto{
         display: none;
     }
-
-    #botao{
-        all: unset;
-        position: absolute;
-        right: 1.5rem;
-
-        img{
-            width: 7.125rem;
-            aspect-ratio: 1;
-            object-fit: cover;
-        }
-    }
-    #botao:hover{
-        cursor: pointer;
-    }
 `

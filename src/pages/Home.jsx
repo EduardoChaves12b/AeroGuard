@@ -2,10 +2,9 @@ import { GlobalStyle } from "../styles/global";
 import { HomeConteudo } from '../styles/Home.styles'
 import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Lua from "/IconLua.png"
-import Sol from "/IconSol.png"
 import HomeLight from "/HomeLight.png"
 import HomeDark from "/HomeDark.png"
+import Botao from "../components/Botao";
 
 
 export default function Home() {
@@ -15,10 +14,7 @@ export default function Home() {
   }
   return (
     <HomeConteudo $darkMode={darkMode}>
-      <button id="botao" onClick={toggleDarkMode}>
-        <img className={darkMode ? 'oculto' : ''} src={Lua} alt="Sol ícone" />
-        <img className={darkMode ? '' : 'oculto'} src={Sol} alt="Lua ícone" />
-      </button>
+      <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
 
       <div className="titulo">
         <img className={darkMode ? 'oculto' : ''} src={HomeLight} alt="" />
