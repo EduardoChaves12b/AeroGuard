@@ -6,6 +6,8 @@ import Botao from "../components/Botao";
 import Configuracao from "/IconConfiguracao.png"
 import Controle from "/IconControle.png"
 import Funcionalidade from "/IconFuncionalidade.png"
+import Light from "/HomeLight.png"
+import Dark from "/HomeDark.png"
 
 export default function Guia() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,6 +34,8 @@ export default function Guia() {
     <GuiaConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+      <img className={darkMode ? 'oculta logo' : 'logo'} src={Light}/>
+      <img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} />
       <h1>Guia de Ultilização</h1>
       <section id="guias">
         <button onClick={toggleGuia1} className={guia1 ? 'ativo' : 'oculto'}>

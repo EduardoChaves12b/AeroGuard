@@ -82,4 +82,50 @@ export const GuiaConteudo = styled.main`
     .oculto img{
         filter: invert(100%) brightness(1000%);     
     }
+
+    .oculta, .logo{
+        display: none;
+    }
+
+    @media (max-width: 430px){
+        overflow-x: hidden;
+        
+        h1{
+            font-size: 2.75rem;
+            padding-top: 1rem;
+        }
+        
+        #guias{
+            flex-direction: column;
+            gap: 3rem;
+            margin-inline: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            button{
+                max-width: 28.75rem;
+                min-height: 18rem;
+                padding-block: 1rem;
+                h3{
+                    font-size: 2.5rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+
+                img{
+                    max-width: 11.5rem;
+                }
+            }
+        }
+
+        .logo{
+            display: block;
+            width: 8rem;
+            margin-inline: auto;
+        }
+        .oculta{
+            display: none;
+        }
+    }
 `
