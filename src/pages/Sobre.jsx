@@ -1,6 +1,7 @@
 import { GlobalStyle } from "../styles/global";
 import {SobreConteudo, Card} from '../styles/Sobre.styles'
 import { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import Header from '../components/Header'
 import Botao from "../components/Botao";
 import Andrey from "/Andrey.png"
@@ -21,8 +22,8 @@ export default function Sobre() {
     <SobreConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-      <img className={darkMode ? 'oculta logo' : 'logo'} src={Light}/>
-      <img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} />
+      <NavLink to="/"><img className={darkMode ? 'oculta logo' : 'logo'} src={Light} alt="" /></NavLink>
+      <NavLink to="/"><img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} alt="" /></NavLink>
       <h1>Sobre nós</h1>
       <section id="integrantes">
         <Card $darkMode={darkMode}>

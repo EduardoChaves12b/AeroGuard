@@ -1,6 +1,7 @@
 import { GlobalStyle } from "../styles/global";
 import {Artigo, ReferenciasConteudo} from '../styles/Referencias.styles'
 import { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import Header from '../components/Header'
 import Botao from "../components/Botao";
 import Baixar from "/Baixar.png"
@@ -17,8 +18,8 @@ export default function Referencias() {
     <ReferenciasConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-      <img className={darkMode ? 'oculto logo' : 'logo'} src={Light}/>
-      <img className={darkMode ? 'logo' : 'oculto logo'} src={Dark} />
+      <NavLink to="/"><img className={darkMode ? 'oculto logo' : 'logo'} src={Light} alt="" /></NavLink>
+      <NavLink to="/"><img className={darkMode ? 'logo' : 'oculto logo'} src={Dark} alt="" /></NavLink>
       <h1>Referências Bibliográficas</h1>
       <section id="artigos">
         <Artigo $darkMode={darkMode}>

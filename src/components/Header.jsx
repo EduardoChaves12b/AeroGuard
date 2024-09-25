@@ -16,7 +16,7 @@ export default function Header({ darkMode }) {
   return (
     <Head>
         <section id="desktop" className={darkMode ? 'dark' : 'light'}>
-            <NavLink to="/materiais">Produto</NavLink>
+            <NavLink to="/materiais">Materiais</NavLink>
             <NavLink to="/sobre-nos">Sobre nós</NavLink>
             <NavLink to="/" id="logo" className={darkMode ? 'oculto' : ''}><img src={LogoLight} alt="Logo AeroGuard" /></NavLink>
             <NavLink to="/" id="logo" className={darkMode ? '' : 'oculto'}><img src={LogoDark} alt="Logo AeroGuard" /></NavLink>
@@ -25,7 +25,7 @@ export default function Header({ darkMode }) {
         </section>
 
         <section id="mobile" className={`${ativa ? 'ativa' : 'inativa'} ${darkMode ? 'dark' : 'light'}`}>
-            <NavLink to="/materiais">Produto</NavLink>
+            <NavLink to="/materiais">Materiais</NavLink>
             <NavLink to="/sobre-nos">Sobre nós</NavLink>
             <NavLink to="/guia">Guia</NavLink>
             <NavLink to="/referencias">Referências</NavLink>

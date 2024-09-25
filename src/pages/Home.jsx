@@ -22,7 +22,7 @@ export default function Home() {
     <HomeConteudo $darkMode={darkMode}>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       <section id="mobile" className={`${ativa ? 'ativa' : 'inativa'} ${darkMode ? 'dark' : 'light'}`}>
-        <NavLink to="/materiais">Produto</NavLink>
+        <NavLink to="/materiais">Materiais</NavLink>
         <NavLink to="/sobre-nos">Sobre nós</NavLink>
         <NavLink to="/guia">Guia</NavLink>
         <NavLink to="/referencias">Referências</NavLink>
@@ -31,8 +31,8 @@ export default function Home() {
       <button className="mobile" onClick={ToggleAtiva}><img src={Menu} alt="" /></button>
 
       <div className="titulo">
-        <img className={darkMode ? 'oculto' : ''} src={HomeLight} alt="" />
-        <img className={darkMode ? '' : 'oculto'} src={HomeDark} alt="" />
+        <NavLink to="/"><img className={darkMode ? 'oculto' : ''} src={HomeLight} alt="" /></NavLink>
+        <NavLink to="/"><img className={darkMode ? '' : 'oculto'} src={HomeDark} alt="" /></NavLink>
         <h1>AeroGuard Tech</h1>
       </div>
 

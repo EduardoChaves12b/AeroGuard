@@ -1,6 +1,7 @@
 import { GlobalStyle } from "../styles/global";
 import { Carrossel, MateriaisConteudo } from '../styles/Materiais.styles'
 import { useState } from 'react';
+import { NavLink } from "react-router-dom";
 import Header from '../components/Header'
 import Botao from "../components/Botao";
 import Voltar from "/IconVoltar.png"
@@ -87,8 +88,8 @@ export default function Materiais() {
     <MateriaisConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-      <img className={darkMode ? 'oculta logo' : 'logo'} src={Light}/>
-      <img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} />
+      <NavLink to="/"><img className={darkMode ? 'oculta logo' : 'logo'} src={Light} alt="" /></NavLink>
+      <NavLink to="/"><img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} alt="" /></NavLink>
       <Carrossel $darkMode={darkMode}>
         <h1>{contents[currentIndex].title}</h1>
         <div id="conteudo">
