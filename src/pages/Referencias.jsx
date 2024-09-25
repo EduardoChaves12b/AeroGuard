@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import Botao from "../components/Botao";
 import Baixar from "/Baixar.png"
 import PDF from "/PDF.png"
+import Light from "/HomeLight.png"
+import Dark from "/HomeDark.png"
 
 export default function Referencias() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,6 +17,8 @@ export default function Referencias() {
     <ReferenciasConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+      <img className={darkMode ? 'oculto logo' : 'logo'} src={Light}/>
+      <img className={darkMode ? 'logo' : 'oculto logo'} src={Dark} />
       <h1>Referências Bibliográficas</h1>
       <section id="artigos">
         <Artigo $darkMode={darkMode}>

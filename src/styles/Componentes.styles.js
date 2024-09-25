@@ -49,7 +49,7 @@ export const Head = styled.header`
         background: none;
     }
 
-    .mobile{display: none;}
+    .mobile, .inativa{display: none;}
 
     @media (max-width: 430px) {
         #desktop{
@@ -62,6 +62,7 @@ export const Head = styled.header`
             right: 2rem;
             top: 3rem;
         }
+
         .inativa{
             display: none;
         }

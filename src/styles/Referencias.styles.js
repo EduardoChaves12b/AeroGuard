@@ -23,6 +23,35 @@ export const ReferenciasConteudo = styled.main`
         max-width: 150rem;
     }
 
+    .oculto, .logo{
+        display: none;
+    }
+
+    @media (max-width: 430px) {
+        overflow-x: hidden;
+        min-height: 100vh;
+        h1{
+            font-size: 2.75rem;
+            padding-top: 1rem;
+        }
+
+        #artigos{
+            max-width: 29rem;
+            margin-left: 2rem;
+            min-height: calc(100vh - 28rem);
+            margin-top: 2rem;
+        }
+
+        .logo{
+            display: block;
+            width: 8rem;
+            margin-inline: auto;
+        }
+        .oculto{
+            display: none;
+        }
+    }
+
 `
 export const Artigo = styled.div`
     display: flex;
@@ -72,10 +101,39 @@ export const Artigo = styled.div`
         text-align: center;
         display: flex;
         align-items: center;
-        max-width: 95rem;
+        max-width: 97rem;
     }
 
     .branco{
         filter: invert(100%) brightness(1000%);     
+    }
+
+    @media (max-width: 430px) {
+
+        
+        h2::after,
+        &::before {
+            display: none;
+        }
+
+        h2{
+            font-size: 2.5rem;
+            height: 4.25rem;
+            width: 4.25rem;
+            margin-right: 1rem;
+            margin-top: .5rem;
+        }
+
+        a{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5rem;
+            max-width: 24.5rem;
+            text-align: left;
+
+            img{
+                width: 4.25rem;
+            }
+        }
     }
 `
