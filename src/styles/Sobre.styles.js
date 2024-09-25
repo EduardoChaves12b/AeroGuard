@@ -31,14 +31,46 @@ export const SobreConteudo = styled.main`
             z-index: 0;
         }
     }
+
+    .oculta, .logo{
+        display: none;
+    }
+
+    @media (max-width: 430px){
+        overflow-x: hidden;
+        
+        h1{
+            font-size: 2.75rem;
+            padding-top: 1rem;
+        }
+
+        #integrantes{
+            flex-direction: column;
+            gap: 3rem;
+            padding-block: 3rem;
+            &::before{
+                display: none;
+            }
+        }
+
+        .logo{
+            display: block;
+            width: 8rem;
+            margin-inline: auto;
+        }
+        .oculta{
+            display: none;
+        }
+    }
 `
 
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-radius: 10px;
     padding-inline: 1.75rem;
-    max-width: 22rem;
+    max-width: 27rem;
     z-index: 1;
     background-image: linear-gradient(to bottom, ${({ $darkMode }) => ($darkMode ? '#ECF7FE' : '#1A2D7A')}, #1465BB);
     h3{
@@ -55,7 +87,7 @@ export const Card = styled.div`
     }
     a{
         display: flex;
-        gap: 1.25rem;
+        gap: 1.125rem;
         font-family: "Open Sans";
         font-weight: 400;
         font-size: 2rem;

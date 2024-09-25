@@ -9,6 +9,8 @@ import Eduardo from "/Eduardo.png"
 import Vinicius from "/Vinicius.png"
 import Instagram from "/Instagram.png"
 import Linkedin from "/Linkedin.png"
+import Light from "/HomeLight.png"
+import Dark from "/HomeDark.png"
 
 export default function Sobre() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,6 +21,8 @@ export default function Sobre() {
     <SobreConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+      <img className={darkMode ? 'oculta logo' : 'logo'} src={Light}/>
+      <img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} />
       <h1>Sobre nós</h1>
       <section id="integrantes">
         <Card $darkMode={darkMode}>
