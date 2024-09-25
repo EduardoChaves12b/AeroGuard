@@ -6,7 +6,7 @@ export const HomeConteudo = styled.main`
     border: 1.5rem solid ${({ $darkMode }) => ($darkMode ? '#ECF7FE' : '#1A2D7A')};
     background: ${({ $darkMode }) => ($darkMode ? '#1A2D7A' : '#ECF7FE')};
     transition: .5s;
-    .oculto{
+    .oculto, .inativa, .mobile{
         display: none;
     }
 
