@@ -5,6 +5,21 @@ export const MateriaisConteudo = styled.main`
     transition: .5s;
     min-height: 100vh;
     border: 1.25rem solid ${({ $darkMode }) => ($darkMode ? '#ECF7FE' : '#1A2D7A')};
+
+    .oculta, .logo{
+        display: none;
+    }
+    @media (max-width: 430px){
+        overflow-x: hidden;
+        .logo{
+            display: block;
+            width: 8rem;
+            margin-inline: auto;
+        }
+        .oculta{
+            display: none;
+        }
+    }
 `
 
 export const Carrossel = styled.div`
@@ -64,5 +79,35 @@ export const Carrossel = styled.div`
 
     .dark img{
         filter: invert(100%) brightness(1000%); 
+    }
+
+    @media (max-width: 430px){
+        h1{
+            font-size: 2.75rem;
+            padding-top: 1rem;
+        }
+
+        #conteudo{
+            flex-direction: column;
+            margin-inline: 2rem;
+            justify-content: space-evenly;
+            img{
+                max-width: 21rem;
+            }
+            p{
+                max-width: 31.25rem;
+                font-size: 1.25rem;
+            }
+            figcaption{
+                font-size: 1.75rem;
+            }
+        }
+
+        button{
+            top: 33%;
+            img{
+                max-width: 7.25rem;
+            }
+        }
     }
 `

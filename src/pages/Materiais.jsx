@@ -12,6 +12,8 @@ import HC05 from "/HC05.png"
 import LCD from "/LCD.png"
 import GPS from "/GPS.png"
 import Bateria from "/Bateria.png"
+import Light from "/HomeLight.png"
+import Dark from "/HomeDark.png"
 
 export default function Materiais() {
   const [darkMode, setDarkMode] = useState(false);
@@ -85,6 +87,8 @@ export default function Materiais() {
     <MateriaisConteudo $darkMode={darkMode}>
       <Header darkMode={darkMode}/>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+      <img className={darkMode ? 'oculta logo' : 'logo'} src={Light}/>
+      <img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} />
       <Carrossel $darkMode={darkMode}>
         <h1>{contents[currentIndex].title}</h1>
         <div id="conteudo">
