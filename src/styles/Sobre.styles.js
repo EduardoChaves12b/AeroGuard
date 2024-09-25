@@ -36,7 +36,7 @@ export const SobreConteudo = styled.main`
         display: none;
     }
 
-    @media (max-width: 430px){
+    @media (max-width: 500px){
         overflow-x: hidden;
         
         h1{

@@ -91,7 +91,7 @@ export const HomeConteudo = styled.main`
         }
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
         overflow-x: hidden;
         padding-top: 1rem;
         min-height: 100vh;

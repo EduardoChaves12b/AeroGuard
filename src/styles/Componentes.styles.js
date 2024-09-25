@@ -51,7 +51,7 @@ export const Head = styled.header`
 
     .mobile, .inativa{display: none;}
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
         #desktop{
             display: none;
         }
@@ -133,7 +133,7 @@ export const Modo = styled.button`
         cursor: pointer;
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
         left: 1.25rem;
         top: 2rem;
         max-width: 6.5rem;

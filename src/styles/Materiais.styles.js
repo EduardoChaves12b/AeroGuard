@@ -9,7 +9,7 @@ export const MateriaisConteudo = styled.main`
     .oculta, .logo{
         display: none;
     }
-    @media (max-width: 430px){
+    @media (max-width: 500px){
         overflow-x: hidden;
         .logo{
             display: block;
@@ -81,7 +81,7 @@ export const Carrossel = styled.div`
         filter: invert(100%) brightness(1000%); 
     }
 
-    @media (max-width: 430px){
+    @media (max-width: 500px){
         h1{
             font-size: 2.75rem;
             padding-top: 1rem;

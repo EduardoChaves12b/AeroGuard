@@ -27,7 +27,7 @@ export const ReferenciasConteudo = styled.main`
         display: none;
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
         overflow-x: hidden;
         min-height: 100vh;
         h1{
@@ -108,7 +108,7 @@ export const Artigo = styled.div`
         filter: invert(100%) brightness(1000%);     
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
 
         
         h2::after,
