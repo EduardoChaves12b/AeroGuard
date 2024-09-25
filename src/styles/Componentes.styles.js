@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Head = styled.header`
-     #desktop{
+    #desktop{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -48,6 +48,69 @@ export const Head = styled.header`
     #logo{
         background: none;
     }
+
+    .mobile{display: none;}
+
+    @media (max-width: 430px) {
+        #desktop{
+            display: none;
+        }
+        .mobile{
+            display: block;
+            all: unset;
+            position: absolute;
+            right: 2rem;
+            top: 3rem;
+        }
+        .inativa{
+            display: none;
+        }
+        .ativa{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            transition: .5s;
+            border: solid 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            z-index: 2;
+            padding-block: 1.25rem;
+
+            a{
+                text-decoration: none;
+                font-size: 2.25rem;
+                font-family: "Roboto";
+                background: #1465BB;
+                width: 12.5rem;
+                height: 5.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                box-shadow: 0px 4px 4px 0px rgba(0,0,0,.5);
+            }
+            button{
+                all: unset;
+                position: absolute;
+                left: 1.25rem;
+                top: 1.25rem;
+                font-family: "Righteous";
+                font-size: 2.25rem;
+            }
+        }
+        .dark{
+            color: #ECF7FE;
+            background: #1A2D7A;
+        }
+        .light{
+            color: #1A2D7A;
+            background: #ECF7FE;
+        }
+    }
 `
 
 export const Modo = styled.button`
@@ -67,5 +130,11 @@ export const Modo = styled.button`
     
     :hover{
         cursor: pointer;
+    }
+
+    @media (max-width: 430px) {
+        left: 1.25rem;
+        top: 2rem;
+        max-width: 6.5rem;
     }
 `

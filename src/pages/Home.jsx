@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import HomeLight from "/HomeLight.png"
 import HomeDark from "/HomeDark.png"
 import Botao from "../components/Botao";
+import Menu from "/IconMenu.png"
 
 
 export default function Home() {
@@ -12,9 +13,22 @@ export default function Home() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
+
+  const [ativa, SetAtiva] = useState(false);
+  const ToggleAtiva = () => {
+    SetAtiva(!ativa)
+  }
   return (
     <HomeConteudo $darkMode={darkMode}>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+      <section id="mobile" className={`${ativa ? 'ativa' : 'inativa'} ${darkMode ? 'dark' : 'light'}`}>
+        <NavLink to="/materiais">Produto</NavLink>
+        <NavLink to="/sobre-nos">Sobre nós</NavLink>
+        <NavLink to="/guia">Guia</NavLink>
+        <NavLink to="/referencias">Referências</NavLink>
+        <button onClick={ToggleAtiva}>X</button>
+      </section>
+      <button className="mobile" onClick={ToggleAtiva}><img src={Menu} alt="" /></button>
 
       <div className="titulo">
         <img className={darkMode ? 'oculto' : ''} src={HomeLight} alt="" />

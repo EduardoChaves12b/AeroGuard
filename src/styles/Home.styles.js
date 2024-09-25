@@ -91,4 +91,94 @@ export const HomeConteudo = styled.main`
         }
     }
 
+    @media (max-width: 430px) {
+        overflow-x: hidden;
+        padding-top: 1rem;
+        min-height: 100vh;
+
+        .titulo{
+            img{
+                width: 8rem;
+            }
+            h1{
+                font-size: 2.75rem;
+            }
+            margin-bottom: 9.5rem;
+        }
+
+        .textos{
+            h2{
+                max-width: 21rem;
+                font-size: 2.25rem;
+                padding-block: 1rem;
+            }
+
+            p{
+                width: 30.25rem;
+                font-size: 1.5rem;
+            }
+            gap: 3.5rem;
+        }
+
+        h3, .mais{
+            display: none;
+        }
+
+        .mobile{
+            display: block;
+            all: unset;
+            position: absolute;
+            right: 2rem;
+            top: 3rem;
+        }
+        .inativa{
+            display: none;
+        }
+        .ativa{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            transition: .5s;
+            border: solid 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            z-index: 2;
+            padding-block: 1.25rem;
+
+            a{
+                text-decoration: none;
+                font-size: 2.25rem;
+                font-family: "Roboto";
+                background: #1465BB;
+                width: 12.5rem;
+                height: 5.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                box-shadow: 0px 4px 4px 0px rgba(0,0,0,.5);
+                color: #ECF7FE;
+            }
+            button{
+                all: unset;
+                position: absolute;
+                left: 1.25rem;
+                top: 1.25rem;
+                font-family: "Righteous";
+                font-size: 2.25rem;
+            }
+        }
+        .dark{
+            color: #ECF7FE;
+            background: #1A2D7A;
+        }
+        .light{
+            color: #1A2D7A;
+            background: #ECF7FE;
+        }
+    }
 `
