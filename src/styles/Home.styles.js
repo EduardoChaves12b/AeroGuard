@@ -71,13 +71,14 @@ export const HomeConteudo = styled.main`
 
     .mais{
         display: grid;
-        grid-template-columns: repeat(2, 25rem);
+        grid-template-columns: repeat(2, 20rem);
         justify-content: space-evenly;
-        gap: 10.25rem;
+        margin-inline: 2rem;
+        gap: 10rem;
 
         a{
             font-family: "Roboto";
-            font-size: 4.25rem;
+            font-size: 2.75rem;
             font-weight: 400;
             background: ${({ $darkMode }) => ($darkMode ? '#2481E3' : '#1465BB')};
             color: #ECF7FE;

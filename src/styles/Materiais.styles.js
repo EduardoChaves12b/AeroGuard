@@ -20,7 +20,8 @@ export const Carrossel = styled.div`
     #conteudo{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        margin-inline: 8rem;
         min-height: calc(100vh - 34rem);
 
         p{
@@ -43,6 +44,10 @@ export const Carrossel = styled.div`
         position: absolute;
         top: 50%;
         cursor: pointer;
+
+        img{
+            max-width: 12rem;
+        }
     }
 
     button:active{

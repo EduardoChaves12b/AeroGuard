@@ -18,7 +18,7 @@ export const Head = styled.header`
 
         a{
             font-family: "Roboto";
-            font-size: 2.75rem;
+            font-size: 2.5rem;
             text-decoration: none;
             width: 14.75rem;
             height: 5.25rem;
@@ -43,6 +43,10 @@ export const Head = styled.header`
             color: #ECF7FE;
             background: #1A2D7A;
         }
+    }
+
+    #logo{
+        background: none;
     }
 `
 

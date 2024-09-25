@@ -18,7 +18,7 @@ export const SobreConteudo = styled.main`
         display: flex;
         align-items: center;
         justify-content: space-around;
-        min-height: calc(100vh - 30rem);
+        min-height: calc(100vh - 32rem);
         position: relative;
         &::before {
             content: '';
@@ -38,6 +38,7 @@ export const Card = styled.div`
     flex-direction: column;
     border-radius: 10px;
     padding-inline: 1.75rem;
+    max-width: 22rem;
     z-index: 1;
     background-image: linear-gradient(to bottom, ${({ $darkMode }) => ($darkMode ? '#ECF7FE' : '#1A2D7A')}, #1465BB);
     h3{
@@ -49,7 +50,7 @@ export const Card = styled.div`
         padding-block: 1rem;
     }
     img{
-        width: 19rem;
+        max-width: 19rem;
         margin-bottom: 2.5rem;
     }
     a{
