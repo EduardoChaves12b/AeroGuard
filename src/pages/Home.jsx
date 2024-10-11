@@ -39,8 +39,8 @@ export default function Home() {
       <div className="textos">
         <h2>Sobre o Produto</h2>
         <p>Apresentamos nossa solução inovadora para problemas respiratórios, projetada para transformar a maneira como você cuida da sua saúde. Junte-se a nós nesta jornada de avanço tecnológico em prol de uma melhor qualidade de vida.</p>
-        <h2>Publico alvo</h2>
-        <p>Nosso produto é feito especificamente para pessoas com problemas respiratórios, sejam elas crianças, adultos ou idosos. fizemos pensando em dar uma melhor qualidade de vida para todos.</p>
+        <h2>Público alvo</h2>
+        <p>Nosso produto é feito especificamente para pessoas com problemas respiratórios, sejam elas crianças, adultos ou idosos, pensando em proporcionar uma melhor qualidade de vida aos usuários.</p>
       </div>
 
       <h3>Saiba Mais</h3>
