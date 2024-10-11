@@ -7,7 +7,7 @@ export const HomeConteudo = styled.main`
     background: ${({ $darkMode }) => ($darkMode ? '#1A2D7A' : '#ECF7FE')};
     transition: .5s;
     .oculto, .inativa, .mobile{
-        display: none;
+    display: none;
     }
 
     .titulo{
@@ -74,7 +74,7 @@ export const HomeConteudo = styled.main`
         grid-template-columns: repeat(2, 20rem);
         justify-content: space-evenly;
         margin-inline: 2rem;
-        gap: 10rem;
+        gap: 5rem;
 
         a{
             font-family: "Roboto";
@@ -85,9 +85,19 @@ export const HomeConteudo = styled.main`
             text-align: center;
             padding-block: .5rem;
             padding-inline: 2rem;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
             border-radius: 15px;
             text-decoration: none;
             width: auto;
+        }
+
+        a:hover {
+            background-color: #119DFC;
+            transition: all .5s;
+            letter-spacing: 2px;
+            opacity: 1; 
+            transform: scale(1, 1);
         }
     }
 
