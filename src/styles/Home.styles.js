@@ -7,7 +7,7 @@ export const HomeConteudo = styled.main`
     background: ${({ $darkMode }) => ($darkMode ? '#1A2D7A' : '#ECF7FE')};
     transition: .5s;
     .oculto, .inativa, .mobile{
-    display: none;
+        display: none;
     }
 
     .titulo{
