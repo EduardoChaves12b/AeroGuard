@@ -28,19 +28,19 @@ export default function Referencias() {
         </Artigo>
         <Artigo $darkMode={darkMode}>
           <h2>2</h2>
-          <a href="">
+          <a href="https://memoria.ifrn.edu.br/bitstream/handle/1044/2050/TCC%20vers%C3%A3o%20final.pdf">
             Utilização de prototipagem arduino para controlar a umidade em ambientes climatizados.
           </a>
         </Artigo>
         <Artigo $darkMode={darkMode}>
           <h2>3</h2>
-          <a href="">
+          <a href="https://periodicos.set.edu.br/saude/article/view/10607">
             Associação entre poluição do ar e da asma com níves de poluetes dentro do recomendável.
           </a>
         </Artigo>
         <Artigo $darkMode={darkMode}>
           <h2>4</h2>
-          <a href="">
+          <a href="https://estudogeral.uc.pt/handle/10316/82743">
             Poluição ambiental como factor de risco para o aumento de asma brônquica?
           </a>
         </Artigo>
