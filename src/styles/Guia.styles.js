@@ -87,6 +87,12 @@ export const GuiaConteudo = styled.main`
         display: none;
     }
 
+    .jogo {
+        text-align: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
     @media (max-width: 500px){
         overflow-x: hidden;
         

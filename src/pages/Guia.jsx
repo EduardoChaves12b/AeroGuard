@@ -55,6 +55,10 @@ export default function Guia() {
           <img src={Configuracao} alt="" />
         </button>
       </section>
+      <section class="jogo">
+        <h1>Jogo</h1>
+        <div class="linkVideo"><iframe width="860" height="515" src="https://www.youtube.com/embed/k-IjhUJWbfo?si=TYtbN7EQUADy7fEy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      </section>
       <GlobalStyle/>
     </GuiaConteudo>
   )
