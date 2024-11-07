@@ -63,7 +63,7 @@ export default function Guia() {
         </div>
         <div class="projeto">
           <h1>Projeto</h1>
-          <iframe class="linkProjeto"width="740" height="415" src="https://www.youtube.com/embed/dn-_HtJ0e4E?si=PhGLbp4QC3dBZSw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="linkProjeto"width="760" height="415" src="https://www.youtube.com/embed/9cgYU0GPcsw?si=_uTpBb7c9MkIX3Gy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </section>
       <GlobalStyle/>
