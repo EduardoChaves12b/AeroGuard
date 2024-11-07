@@ -29,25 +29,25 @@ export default function Sobre() {
         <Card $darkMode={darkMode}>
           <h3>Eduardo Chaves</h3>
           <img src={Eduardo} alt="Eduardo Chaves" />
-          <a href="https://www.instagram.com/chves_du/"><img src={Instagram} alt="Instagram" />chves_du</a>
+          <a href="https://www.instagram.com/chves_du/" target="_blank"><img src={Instagram} alt="Instagram" />chves_du</a>
           <a href="https://www.linkedin.com/in/eduardo-chaves-7078492ba/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src={Linkedin} alt="Linkedin" />Eduardo Chaves</a>
         </Card>
         <Card $darkMode={darkMode}>
           <h3>Gabriel Silva</h3>
           <img src={Gabriel} alt="Gabriel Silva" />
-          <a href="https://www.instagram.com/gaabrielsilvas/"><img src={Instagram} alt="Instagram" />gaabrielsilvas</a>
+          <a href="https://www.instagram.com/gaabrielsilvas/" target="_blank"><img src={Instagram} alt="Instagram" />gaabrielsilvas</a>
           <a href="https://www.linkedin.com/in/gabriel-souza-silva-b79795252/"><img src={Linkedin} alt="Linkedin" />Gabriel Silva</a>
         </Card>
         <Card $darkMode={darkMode}>
           <h3>Andrey Trolezi</h3>
           <img src={Andrey} alt="Andrey Trolezi" />
-          <a href="https://www.instagram.com/trolezi.andrey/"><img src={Instagram} alt="Instagram" />trolezi.andrey</a>
+          <a href="https://www.instagram.com/trolezi.andrey/" target="_blank"><img src={Instagram} alt="Instagram" />trolezi.andrey</a>
           <a href="https://www.linkedin.com/in/andrey-trolezi-3239552b8/"><img src={Linkedin} alt="Linkedin" />Andrey Trolezi</a>
         </Card>
         <Card $darkMode={darkMode}>
           <h3>Vinicius Alves</h3>
           <img src={Vinicius} alt="Vinicius Alves" />
-          <a href="https://www.instagram.com/vinicius01_zs/"><img src={Instagram} alt="Instagram" />vinicius01_zs</a>
+          <a href="https://www.instagram.com/alves__viny/" target="_blank"><img src={Instagram} alt="Instagram" />alves__viny</a>
           <a href="https://www.linkedin.com/in/vinicius-alves-6b8aa4262/"><img src={Linkedin} alt="Linkedin" />Vinicius Alves</a>
         </Card>
       </section>

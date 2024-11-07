@@ -39,11 +39,11 @@ export default function Guia() {
       <NavLink to="/"><img className={darkMode ? 'logo' : 'oculta logo'} src={Dark} alt="" /></NavLink>
       <h1>Guia de Ultilização</h1>
       <section id="guias">
-        <button onClick={toggleGuia1} className={guia1 ? 'ativo' : 'oculto'}>
-          <h3>Funcionalidade</h3>
-          <p>O nosso produto monitora a temperatura do ambiente e a umidade do ar de forma contínua e precisa. Após a coleta dos dados, ele processa essas informações e envia um alerta ao usuário por meio do aplicativo.</p>
-          <img src={Funcionalidade} alt="" />
-        </button>
+          <button onClick={toggleGuia1} className={guia1 ? 'ativo' : 'oculto'}>
+            <h3>Funcionalidade</h3>
+            <p>O nosso produto monitora a temperatura do ambiente e a umidade do ar de forma contínua e precisa. Após a coleta dos dados, ele processa essas informações e envia um alerta ao usuário por meio do aplicativo.</p>
+            <img src={Funcionalidade} alt="" />
+          </button>
         <button onClick={toggleGuia2} className={guia2 ? 'ativo' : 'oculto'}>
           <h3>Controle Intuitivo</h3>
           <p>Receba alertas em tempo real no seu aplicativo quando as condições de temperatura ou umidade ultrapassarem os limites definidos. Visualize os dados detalhados das medições recentes e históricas. Ajuste facilmente os limites de alerta e as configurações do dispositivo através do aplicativo.</p>
@@ -55,9 +55,16 @@ export default function Guia() {
           <img src={Configuracao} alt="" />
         </button>
       </section>
-      <section class="jogo">
-        <h1>Jogo</h1>
-        <div class="linkVideo"><iframe width="860" height="515" src="https://www.youtube.com/embed/k-IjhUJWbfo?si=TYtbN7EQUADy7fEy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+      <section class="videos">
+        <div class="jogo">
+          <h1>Jogo</h1>
+          <iframe class="linkJogo"width="740" height="415" src="https://www.youtube.com/embed/k-IjhUJWbfo?si=TYtbN7EQUADy7fEy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="projeto">
+          <h1>Projeto</h1>
+          <iframe class="linkProjeto"width="740" height="415" src="https://www.youtube.com/embed/dn-_HtJ0e4E?si=PhGLbp4QC3dBZSw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </section>
       <GlobalStyle/>
     </GuiaConteudo>

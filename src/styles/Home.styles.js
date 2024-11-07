@@ -7,7 +7,7 @@ export const HomeConteudo = styled.main`
     background: ${({ $darkMode }) => ($darkMode ? '#1A2D7A' : '#ECF7FE')};
     transition: .5s;
     .oculto, .inativa, .mobile{
-        display: none;
+    display: none;
     }
 
     .titulo{
@@ -93,9 +93,9 @@ export const HomeConteudo = styled.main`
         }
 
         a:hover {
-            background-color: #119DFC;
+            background-color: #2481E3;
             transition: all .5s;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             opacity: 1; 
             transform: scale(1, 1);
         }

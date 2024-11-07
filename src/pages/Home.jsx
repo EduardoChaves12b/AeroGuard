@@ -18,6 +18,7 @@ export default function Home() {
   const ToggleAtiva = () => {
     SetAtiva(!ativa)
   }
+
   return (
     <HomeConteudo $darkMode={darkMode}>
       <Botao darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
