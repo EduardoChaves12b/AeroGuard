@@ -6,11 +6,11 @@ import Header from '../components/Header'
 import Botao from "../components/Botao";
 import Voltar from "/IconVoltar.png"
 import Avancar from "/IconAvancar.png"
-import Arduino from "/Arduino.png"
+import Arduino from "/NANO.png"
 import MQ135 from "/MQ135.png"
 import DHT22 from "/DHT22.png"
 import HC05 from "/HC05.png"
-import LCD from "/LCD.png"
+import OLED from "/OLED.png"
 import GPS from "/GPS.png"
 import Bateria from "/Bateria.png"
 import Light from "/HomeLight.png"
@@ -24,10 +24,10 @@ export default function Materiais() {
 
   const contents = [
     {
-      title: "Arduino UNO",
+      title: "Arduino Nano",
       image: Arduino,
-      description: "O Arduino UNO é uma placa de prototipagem baseada no microcontrolador ATmega328P, conhecida pela simplicidade e versatilidade. Possui 14 pinos digitais, 6 analógicos, uma porta USB e uma conexão de alimentação. Adequada para iniciantes e projetos avançados, é compatível com diversos shields e módulos, permitindo a criação de várias aplicações.",
-      price: "R$ 90,16"
+      description: "O Arduino Nano é uma placa microcontroladora compacta e de baixo custo baseada no ATmega328, projetada para facilitar o desenvolvimento de projetos de eletrônica e programação. Com dimensões pequenas, ele é ideal para projetos onde o espaço é limitado, como dispositivos vestíveis e sistemas embutidos. A placa conta com 14 pinos digitais (dos quais 6 podem ser usados como saídas PWM), 8 entradas analógicas e um conector mini-USB para programação e comunicação. Além disso, é compatível com a maioria dos sensores, módulos e componentes eletrônicos usados na plataforma Arduino, facilitando a prototipagem de projetos eletrônicos e robóticos.",
+      price: "R$ 35,01"
     },
 
     {
@@ -52,10 +52,10 @@ export default function Materiais() {
     },
 
     {
-      title: "Display LCD",
-      image: LCD,
-      description: "O Arduino UNO é uma placa de prototipagem com o microcontrolador ATmega328P, conhecida por sua simplicidade e versatilidade. Possui 14 pinos digitais, 6 analógicos, porta USB e conexão de alimentação, sendo ideal para iniciantes e projetos avançados, além de ser compatível com vários shields e módulos.",
-      price: "R$ 28,40"
+      title: "Display OLED",
+      image: OLED,
+      description: "O display OLED é um tipo de tela que utiliza diodos orgânicos emissores de luz para formar imagens. Ao contrário das telas LCD, que dependem de uma luz de fundo, cada pixel em um display OLED emite sua própria luz quando uma corrente elétrica passa por ele. Essa característica permite que os OLEDs tenham cores vibrantes, pretos profundos e altos níveis de contraste. Além disso, são mais eficientes em termos de energia para exibir cenas escuras, têm ângulos de visão amplos e geralmente são mais finos e flexíveis, tornando-os ideais para dispositivos móveis, TVs e wearables.",
+      price: "R$ 17,91"
     },
 
     {
@@ -94,7 +94,7 @@ export default function Materiais() {
         <h1>{contents[currentIndex].title}</h1>
         <div id="conteudo">
           <figure>
-            <img className="imagem" src={contents[currentIndex].image} alt={contents[currentIndex].title} />
+            <a href=""><img className="imagem" src={contents[currentIndex].image} alt={contents[currentIndex].title} /></a>
             <figcaption>{contents[currentIndex].price}</figcaption>
           </figure>
           <p>{contents[currentIndex].description}</p>

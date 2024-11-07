@@ -93,6 +93,28 @@ export const GuiaConteudo = styled.main`
         margin-bottom: 10rem;
     }
 
+    .jogo h1 {
+        margin-bottom: 30px;
+    }
+
+    .linkJogo {
+        border-radius: 15px;
+    }
+
+    .projeto {
+        text-align: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .projeto h1 {
+        margin-bottom: 30px;
+    }
+
+    .linkProjeto {
+        border-radius: 15px;
+    }
+
     @media (max-width: 500px){
         overflow-x: hidden;
         
@@ -132,6 +154,11 @@ export const GuiaConteudo = styled.main`
         }
         .oculta{
             display: none;
+        }
+
+        iframe {
+            height: 260px;
+            width: 400px;
         }
     }
 `
